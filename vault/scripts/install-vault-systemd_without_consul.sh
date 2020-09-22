@@ -18,7 +18,7 @@ else
   exit 1;
 fi
 
-sudo curl --silent -Lo ${SYSTEMD_DIR}/vault.service https://raw.githubusercontent.com/jsp-hashicorp/guides-configuration/master/vault/init/systemd/vault.service
+sudo curl --silent -Lo ${SYSTEMD_DIR}/vault.service https://raw.githubusercontent.com/jsp-hashicorp/guides-configuration/master/vault/init/systemd/vault_dev.service
 sudo chmod 0664 ${SYSTEMD_DIR}/vault*
 
 sudo systemctl enable vault
