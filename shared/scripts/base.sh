@@ -7,8 +7,8 @@ echo "Installing jq"
 sudo curl --silent -Lo /bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64
 sudo chmod +x /bin/jq
 
-echo "Setting timezone to UTC"
-sudo timedatectl set-timezone UTC
+echo "Setting timezone to KST (Asia/Seoul)"
+sudo timedatectl set-timezone Asia/Seoul
 
 # Detect package management system.
 YUM=$(which yum 2>/dev/null)
